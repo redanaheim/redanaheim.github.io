@@ -3,17 +3,17 @@
 </script>
 
 <h1 id="projects_title">
-	Things I've Created: Front-end
+	Project Portfolio<br><br>Front-end
 </h1>
 <div id="frontend_projects" class="projects_container">
 	<a class="card_wrap_link" href="https://claritytalentmeasurement.com/roi-2/">
 		<div class="card" id="clarity_calculator">
 			<h3 class="card_title">
-				Return on Investment Calculator: Clarity Talent Measurement
+				Return on Investment Widget: Clarity Talent Measurement
 				<img src="./link.png" class="card_link" alt="Link"/>
 			</h3>
 			<p class="card_subtitle">
-				<Tab/>A calculator which estimates how much Clarity's assessments can save your company. Built with Svelte, TypeScript, and vanilla CSS. Uses the JavaScript autonumeric library for seamless large number inputs. Svelte's efficient reactivity is perfect for a calculator like this.
+				<Tab/>A calculator which estimates how much Clarity's assessments can save your company. Built with Svelte, TypeScript, and vanilla CSS. Uses the JavaScript autonumeric library for seamless large number inputs. Svelte's efficient reactivity is perfect for a calculator like this. I also wrote the glue to include this on their WordPress website.
 			</p>
 			<img src="./clarity_calculator.png" id="clarity_calculator" alt="ROI Calculator"/>
 		</div>
