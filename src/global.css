@@ -64,7 +64,7 @@ a {
 .card {
     background-color: var(--card-bg);
     border-radius: 1em;
-    box-shadow: 2px 2px 2px 2px var(--box-shadow);
+    box-shadow: 3px 3px 3px 3px var(--box-shadow);
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;

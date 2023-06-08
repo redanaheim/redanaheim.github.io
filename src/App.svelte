@@ -1,12 +1,15 @@
 <script lang="ts">
     import Projects from "./Projects.svelte";
+    import ThemeToggle from "./ThemeToggle.svelte";
 </script>
 
+<div id="toggle">
+	<ThemeToggle checked={true}/>
+</div>
+
 <h1>
-	Gary Springstead - Software Development & Web Design
+	Gary Springstead • Software Development & Web Design
 </h1>
-
-
 
 <div class="info">
 	<div class="github_profile socials card">
@@ -24,10 +27,21 @@
 			<img id="uofm_logo" src="uofm_logo.png" alt="University of Michigan Block M"/>elevengs@umich.edu
 		</a>
 	</div>
+	<div class="linkedin socials card">
+		<a href="https://www.linkedin.com/in/gary-springstead-73a183277/">
+			<img id="linkedin_logo" src="linked_in.png" alt="LinkedIn logo"/>Gary Springstead
+		</a>
+	</div>
 </div>
 <Projects></Projects>
  
 <style>
+	#toggle {
+		position: absolute;
+		right: 25px;
+		top: 5px;
+	}
+
 	h1 {
 		text-align: center;
 		width: 100%;
