@@ -1,13 +1,23 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import Projects from "./Projects.svelte";
     import ThemeToggle from "./ThemeToggle.svelte";
+
+    const change_theme = () => {
+	document.documentElement.classList.toggle("dark")
+	document.body.classList.toggle("dark")
+    }
+
+    let header: HTMLHeadingElement;
+
+    onMount(() => {
+	    header.addEventListener("click", change_theme)
+    })
+
 </script>
 
-<div id="toggle">
-	<ThemeToggle checked={true}/>
-</div>
 
-<h1>
+<h1 bind:this={header}>
 	Gary Springstead • Software Development & Web Design
 </h1>
 
@@ -37,9 +47,9 @@
  
 <style>
 	#toggle {
-		position: absolute;
-		right: 25px;
-		top: 5px;
+		margin-right: 5px;
+		margin-left: 95%;
+		display: inline;
 	}
 
 	h1 {
@@ -65,6 +75,11 @@
 		width: max-content;
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
+	}
+
+	.socials > a {
+		display: block;
+		width: max-content;
 	}
 
 	.socials > a > img {

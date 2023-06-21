@@ -97,6 +97,7 @@
 	h1, h2, h3, h4, h5 {
 		text-align: center;
 		width: 100%;
+		box-sizing: border-box;
 	}
 
 	.projects_container {
@@ -110,13 +111,14 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: stretch;
+		box-sizing: border-box;
 	}
 
 	.card, .card_wrap_link {
 		flex-grow: 1;
 		flex-basis: 570px;
 		position: relative;
-		min-width: 570px;
+		max-width: 585px;
 		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
